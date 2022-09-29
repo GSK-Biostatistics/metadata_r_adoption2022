@@ -58,7 +58,7 @@ adsl_grouped <- adsl_decode %>%
 
 # Once you have created all the variables will want to add label 
 adsl <- adsl_grouped %>% 
-  # order_cols(adsl_spec) %>%
+  order_cols(adsl_spec) %>%
   set_variable_labels(adsl_spec)
 
 
